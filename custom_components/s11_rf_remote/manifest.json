@@ -1,0 +1,11 @@
+{
+  "domain": "s11_rf_remote",
+  "name": "S11 RF/IR Remote Manager",
+  "version": "3.0.1",
+  "documentation": "https://www.home-assistant.io",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@nguyen_viet_hung"],
+  "iot_class": "local_polling",
+  "config_flow": true
+}

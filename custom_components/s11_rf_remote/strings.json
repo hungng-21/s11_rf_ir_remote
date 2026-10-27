@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Thiết lập S11 RF/IR Remote Manager v3.1",
+        "description": "Chọn thực thể Hub S11+ (Tuya Local) của bạn:",
+        "data": {
+          "remote_entity": "Thực thể Hub S11+ (remote.*)"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Đã cập nhật cấu hình thực thể Hub S11+ thành công! Hãy bấm biểu tượng Bánh răng (Configure) để mở bảng điều khiển."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "🎛️ Bảng Điều Khiển S11+ v3.1",
+        "description": "Chọn tính năng bạn muốn sử dụng và bấm Hoàn tất (Submit):",
+        "data": {
+          "menu_choice": "Danh mục chức năng"
+        }
+      },
+      "learn_command": {
+        "title": "📡 Bước 1: Học Lệnh Mới (IR / RF)",
+        "description": "Hub đang dùng: `{remote}`\n• Với quạt trần RF: Hãy chọn **Sóng RF 433MHz** (mặc định 433.92MHz).\n• Sau khi bấm Submit, đèn trên Hub S11+ sẽ sáng lên, hãy hướng điều khiển vào Hub và ấn giữ nút 1 - 1.5 giây.",
+        "data": {
+          "device": "Tên thiết bị (Chọn hoặc gõ tên mới, VD: quat_tran_phong_khach)",
+          "command": "Tên nút lệnh (Chọn hoặc gõ tên mới, VD: speed_1, power)",
+          "command_type": "Băng tần sóng thu",
+          "frequency": "Tần số chính xác (MHz)"
+        }
+      },
+      "confirm_test": {
+        "title": "🧪 Kiểm Tra & Xác Nhận Lệnh",
+        "description": "{status_info}\n\n• Thiết bị: `{device}` | Nút: `{command}` | Băng tần: `{wave_type}`\nHãy chọn thao tác và bấm Submit:",
+        "data": {
+          "action_choice": "Lựa chọn thao tác",
+          "repeats": "Số lần lặp sóng khi bắn thử (mặc định 2)"
+        }
+      },
+      "library": {
+        "title": "📚 Thư Viện Mã Lệnh Đã Lưu",
+        "description": "{banner}\n\n---\n{library_summary}",
+        "data": {
+          "selected_item": "Chọn nút trong kho",
+          "lib_action": "Thao tác với nút đang chọn"
+        }
+      },
+      "send_command": {
+        "title": "⚡ Phát Thử Nhanh Lệnh Bất Kỳ",
+        "description": "Chọn hoặc nhập nút cần phát thử:",
+        "data": {
+          "device": "Tên thiết bị",
+          "command": "Tên nút lệnh",
+          "repeats": "Số lần lặp xung (num_repeats)"
+        }
+      },
+      "settings": {
+        "title": "⚙️ Cài Đặt Hub S11+",
+        "description": "Chọn lại thực thể remote.* của Hub S11+:",
+        "data": {
+          "remote_entity": "Thực thể Hub S11+"
+        }
+      }
+    },
+    "error": {
+      "learn_failed": "Hết thời gian chờ (20 giây) hoặc Hub chưa bắt được sóng. Hãy kiểm tra đúng tần số 433.92MHz và bấm giữ nút gần Hub hơn!",
+      "send_failed": "Phát lệnh thất bại. Hãy kiểm tra kết nối của Hub S11+."
+    }
+  }
+}

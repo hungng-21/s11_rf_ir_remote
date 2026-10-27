@@ -1,0 +1,60 @@
+learn_command:
+  name: Học lệnh RF / IR
+  description: Kích hoạt chế độ học lệnh trên Hub S11+ và lưu vào thư viện
+  fields:
+    remote_entity:
+      name: Thực thể Hub S11+
+      description: Entity ID của Hub S11+ (để trống sẽ lấy mặc định trong Integration)
+      selector:
+        entity:
+          domain: remote
+    device:
+      name: Tên thiết bị
+      required: true
+      default: quat_tran_phong_khach
+      selector:
+        text:
+    command:
+      name: Nút lệnh cần học
+      required: true
+      default: speed_1
+      selector:
+        text:
+    command_type:
+      name: Loại sóng
+      required: true
+      default: rf
+      selector:
+        select:
+          options:
+            - rf
+            - ir
+
+send_command:
+  name: Phát lệnh RF / IR
+  description: Bắn mã lệnh đã học từ Hub S11+
+  fields:
+    remote_entity:
+      name: Thực thể Hub S11+
+      selector:
+        entity:
+          domain: remote
+    device:
+      name: Tên thiết bị
+      required: true
+      default: quat_tran_phong_khach
+      selector:
+        text:
+    command:
+      name: Lệnh phát
+      required: true
+      default: speed_1
+      selector:
+        text:
+    repeats:
+      name: Số lần lặp xung (num_repeats)
+      default: 2
+      selector:
+        number:
+          min: 1
+          max: 5
