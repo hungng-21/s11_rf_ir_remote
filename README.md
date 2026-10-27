@@ -1,7 +1,7 @@
-# 🎛️ S11 RF/IR Remote Manager (v3.2)
+# 🎛️ S11 RF/IR Remote Manager (v3.0.1)
 **Home Assistant Custom Component** quản lý trung tâm điều khiển Tuya Hub (S11, S11+, S06, S09...) qua mạng nội bộ LAN.
 
-![Version](https://img.shields.io/badge/version-3.2.0-blue.svg)
+![Version](https://img.shields.io/badge/version-3.0.1-blue.svg)
 ![HACS](https://img.shields.io/badge/HACS-Custom-orange.svg)
 ![Local](https://img.shields.io/badge/execution-Local_LAN-success.svg)
 
