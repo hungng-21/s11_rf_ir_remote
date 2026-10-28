@@ -14,8 +14,6 @@ Giải quyết triệt để các vấn đề nhức nhối của thiết bị H
 * 🎯 **Giao diện Menu UI Trực quan:** Không cần cấu hình YAML phức tạp. Mọi thao tác Học/Xóa/Phát thử đều nằm gọn trong nút **Configure (Bánh răng ⚙️)**.
 * ⚡ **Tự động mồi tần số ngầm (Auto-Wake RF):** Tự động gửi xung `toggle` để đánh thức chip RF của Hub S11+ và ép nhận đúng tần số thật (vượt qua lỗi map ngược Data Point 315/433MHz của `tuya_local`).
 * 📚 **Thư Viện Local (Local Library):** Tự động lưu mã đã học vào `/config/.storage/s11_rf_remote_library.json`. Code được bảo toàn an toàn dù cập nhật hay cài lại tích hợp.
-* 🤫 **Tối ưu tiếng Bíp (Single-Beep Optimization):** Mặc định truyền `num_repeats: 1` để quạt trần không bị kêu "tít tít" chói tai mỗi lần đổi số.
-* 🌀 **Tích hợp sẵn Thực thể Quạt (Fan Entity):** Tự động tạo entity `fan.*` hỗ trợ trượt 6 cấp độ tốc độ mượt mà.
 
 ---
 
